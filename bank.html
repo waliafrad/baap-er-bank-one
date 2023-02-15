@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank Inside</title>
+</head>
+<body>
+    <header>
+        <h3 class="text-center text-5xl py-10">Welcome To Your <span class="text-orange-400">Baap er Bank</span> </h3>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+            <div class="bg-green-200 p-8 rounded-md">
+                <h4 class="text-2xl">Deposit</h4>
+                <h2 class="font-normal text-5xl">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-orange-400 p-8 rounded-md">
+                <h4 class="text-2xl">Withdraw</h4>
+                <h2 class="font-normal text-5xl">$00</h2>
+            </div>
+            <div class="bg-lime-400 p-8 rounded-md">
+                <h4 class="text-2xl">Balance</h4>
+                <h2 class="font-normal text-5xl">$1240</h2>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-5 w-9/12 mx-auto mt-10">
+            <div class="bg-green-300 p-8 rounded-md">
+                <div class="form">
+                    <h4 class="text-5xl mb-5 text-white">Please Deposite</h4>
+                    <input class="block mb-3 w-9/12 p-2" type="text" name="" id="deposit-field">
+                    <button type="submit" id="btn-deposit" class="bg-slate-400 px-6 py-3 mt-3 rounded-md text-2xl text-white">Deposit</button>
+                </div>
+            </div>
+            <div class="bg-green-300 p-8 rounded-md">
+                <div class="form">
+                    <h4 class="text-5xl mb-5 text-white">Please Withdraw</h4>
+                    <input class="block mb-3 w-9/12 p-2" type="email" name="" id="user-email">
+                    <button type="submit" id="btn-submit" class="bg-slate-400 px-6 py-3 mt-3 rounded-md text-2xl text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="js/bank.js"></script>
+</body>
+</html>
